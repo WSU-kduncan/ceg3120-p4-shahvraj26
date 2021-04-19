@@ -1,4 +1,4 @@
-ame: Deploy to Amazon ECS
+name: Deploy to Amazon ECS
 # Based on https://docs.github.com/en/actions/guides/deploying-to-amazon-elastic-container-service
 on:
   release:
