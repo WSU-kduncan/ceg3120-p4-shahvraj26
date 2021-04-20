@@ -2,5 +2,5 @@
 ## Project Overview:
 - Created different milestones 
 - Milestone 1 allowed us to publish a webserver using docker
-- Milestone 2 allowed us to create a yaml file, which controlled the aws cli in github.
+- Milestone 2 allowed us to create a yaml file, which controlled a workflow to deploy amazon ecs.
 
