@@ -44,5 +44,5 @@
 		- `COPY ./html/ /usr/local/apache2/htdocs/` : This line copies the index.html file from .html and put it  into apache2 for Docker to use  it.
 	- Save the Dockerfile
 ### Final Step:
-- Go to (127.0.0.1:5000)[127.0.0.1:5000]
+- Go to [127.0.0.1:5000](http://127.0.0.1:5000/)
 
