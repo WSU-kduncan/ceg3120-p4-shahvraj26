@@ -43,7 +43,7 @@
 		- `FROM httpd:2.4` : This pulls the apache2 things
 		- `COPY ./html/ /usr/local/apache2/htdocs/` : This line copies the index.html file from .html and put it  into apache2 for Docker to use  it.
 	- Save the Dockerfile
-### Proof of Milestone 1:
+### Final Step:
 - Go to [127.0.0.1:5000](http://127.0.0.1:5000/)
-
-![Proof](ProofOfDocker.png)
+- It should look like this: ![Proof](ProofOfDocker.png)
+ProofOfDocker.png
