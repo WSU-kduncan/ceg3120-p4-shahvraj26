@@ -13,9 +13,9 @@
 - [x] Tested it with a Reference tag
 
 ## Installation/Setup Requirements:
-- [x] Install Docker
-- [x] Install AWS CLI
-- [x] Install WSL2
+- [x] Install Docker - [Click Here for Installation Link](https://www.docker.com/products/docker-desktop)
+- [x] Install AWS CLI - [Click Here for Installation Link](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2-linux.html)
+- [x] Install WSL2 - [Click Here for Installation Link](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 
 ## Milestone 1 Overview:
 
@@ -47,3 +47,6 @@
 - Go to [127.0.0.1:5000](http://127.0.0.1:5000/)
 
 ![Proof](ProofOfDocker.png)
+
+# Milestone 2 Overview:
+- 
