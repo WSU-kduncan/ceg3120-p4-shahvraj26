@@ -29,3 +29,13 @@
 	- Go to the Docker App. Create a Get-Started Image by copying the command given.
 	- Type `docker ps` to see the container in action
 	- Kill the container by typing `docker kill [name]'
+	- Create a New Docker Repository with the httpd:2.4 installed.
+	- The command is `docker pull httpd:2.4`
+
+### Step 3:
+- Build a Docker Repository!
+	- Create a Docker file named `Dockerfile` exactly inside your public repo.
+	- Add the following lines to the file:
+		- `FROM httpd:2.4
+		   COPY ./html/ /usr/local/apache2/htdocs/`
+ 
