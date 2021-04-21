@@ -31,11 +31,18 @@
 	- Kill the container by typing `docker kill [name]'
 	- Create a New Docker Repository with the httpd:2.4 installed.
 	- The command is `docker pull httpd:2.4`
-
+	- Build the webserver in your repository:
+		- `docker build -t [name of image]`
+		- 
 ### Step 3:
-- Build a Docker Repository!
+- Build a Docker Repository with your own index.html!
+	- Create a html directory in your public repo
+		- Inside the html file create an index.html file and add some content.
 	- Create a Docker file named `Dockerfile` exactly inside your public repo.
 	- Add the following lines to the file:
-		- `FROM httpd:2.4
-		   COPY ./html/ /usr/local/apache2/htdocs/`
- 
+		- `FROM httpd:2.4` : This pulls the apache2 things
+		- `COPY ./html/ /usr/local/apache2/htdocs/` : This line copies the index.html file from .html and put it  into apache2 for Docker to use  it.
+	- Save the Dockerfile
+### Final Step:
+- Go to (127.0.0.1:5000)[127.0.0.1:5000]
+
