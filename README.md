@@ -92,9 +92,9 @@
 - After creating it, go to the `Actions` tab to see your workflow being deployed!
 
 ### Proof of Workflow:
-[Workflow](workflow.png)
+![Workflow](workflow.png)
 ### Proof of YAML File:
-[Yaml File](yamlfile.png)
+![Yaml File](yamlfile.png)
 
 
 # End of Project
