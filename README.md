@@ -32,8 +32,8 @@
 	- Create a New Docker Repository with the httpd:2.4 installed.
 	- The command is `docker pull httpd:2.4`
 	- Build the webserver in your repository:
-		- `docker build -t [name of image]`
-		- 
+		- `docker build -t [name of image] .` : This builds the image in the directory `.` specified
+		- `docker run -d -p 5000:80 [name of image]` : This runs the image on the local machine with port 80 binded to it. 
 ### Step 3:
 - Build a Docker Repository with your own index.html!
 	- Create a html directory in your public repo
@@ -45,4 +45,4 @@
 	- Save the Dockerfile
 ### Final Step:
 - Go to [127.0.0.1:5000](http://127.0.0.1:5000/)
-
+- It should look like this: ![Proof](ProofOfDocker.png)
