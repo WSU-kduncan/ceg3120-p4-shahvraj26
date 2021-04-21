@@ -45,5 +45,6 @@
 	- Save the Dockerfile
 ### Final Step:
 - Go to [127.0.0.1:5000](http://127.0.0.1:5000/)
-It should look like this: 
+
+1. It should look like this. 
 ![Proof](ProofOfDocker.png)
