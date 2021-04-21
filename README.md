@@ -49,4 +49,53 @@
 ![Proof](ProofOfDocker.png)
 
 # Milestone 2 Overview:
-- 
+
+### Step 1:
+- Download AWS CLI V2 on your WSL2 Machine
+- Commands to download and Install:
+	- `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
+	- `unzip awscliv2.zip`
+	- `sudo ./aws/install` : Installs aws on $PATH
+
+### Step 2:
+- Configure your AWS with the Credentials.
+- `aws configure` : This allows you to autmatically add your keys.
+	- Keys should be kept private and can be found on Pilot.
+
+### Step 3:
+- After configuring the AWS IAM, you can create the image. 
+- Type the command `aws create-repository --repository-name [name of repo] --region [region of your aws]
+	- This will create your repository in aws with those credentials.
+
+### Step 4:
+- Create a workflow!
+- In your github repo create a secret directory named `.github`
+- Inside the .github dir create another directory named `workflows` 
+- Inside the workflows dir you want a yaml file that specifies a workflow that deploys to Amazon AWS. 
+	- A link to the [AWS yaml file guide](https://docs.github.com/en/actions/guides/deploying-to-amazon-elastic-container-service)
+- When creating the yaml file make sure to add your region specified when you created your repository in the `AWS_REGION` line.
+- Make sure to add the repository name (Exactly) in the `ECR_REPOSITORY` line.
+ 
+### Step 5:
+- Add the secret keys to Github secrets!
+	- Because it is a public repo, we can't add secret keys to the repo itself, so we need to use githubs secret tool,w hich allows us to add private keys into public repo's
+- Go to your public repo
+- Go to Settings
+- Go to Secrets, and add your AWS SECRET KEY and AWS ACCESS Key.
+	- Make sure its the same as the one you used to configure your aws cli.
+
+### Step 6:
+- Last step is to have the workflow deploy. 
+	- In our yaml file we specified that when a release is made, make sure to start the workflow.
+- To start a release go to your public repo, and on the side there will be something called `Releases`
+- Click on Create new release, and follow the directions specified. 
+- After creating it, go to the `Actions` tab to see your workflow being deployed!
+
+### Proof of Workflow:
+[Workflow](workflow.png)
+### Proof of YAML File:
+[Yaml File](yamlfile.png)
+
+
+# End of Project
+Hope you learned the necessary tools of a github project with docker, workflows, etc.
